@@ -1,0 +1,158 @@
+body {
+    margin: 0;
+    background-color: var(--main-grey);
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    display: flex;
+    flex-flow: column;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    padding: 20px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 10px rgb(233, 233, 233);
+    max-width: 40%;
+}
+
+.main input[type=text],
+.main textarea,
+.pass {
+    outline: none;
+    border-radius: 15px;
+    border: solid 2px rgb(200, 200, 200);
+    padding-left: 15px;
+    transition: ease 0.5s;
+    font-size: 1em;
+    margin: 10px 0px;
+}
+
+.main input[type=text]:focus,
+.main textarea:focus,
+.pass:focus {
+    border: 2px solid rgb(0, 0, 0);
+    box-shadow: 0 0 10px 0px rgb(200, 200, 200)
+}
+
+.main input[type=submit],
+#files::file-selector-button,
+.button {
+    outline: none;
+    border: 2px solid black;
+    font-size: 1em;
+    background-color: white;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    padding: 0.2em 0.4em;
+    box-shadow: 0 0 7px rgba(82, 82, 82, 1);
+    margin-top: 10px;
+}
+
+#files::file-selector-button {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.main input[type=submit]:hover,
+#files::file-selector-button:hover {
+    background-color: black;
+    color: white;
+    box-shadow: none;
+}
+
+.error {
+    color: red;
+    font-style: italic;
+}
+
+.sucess {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sucess a {
+    text-decoration: none;
+    color: black;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+    font-size: 1.5em;
+    transform: translateY(0px);
+    font-family: 'Roboto', sans-serif;
+}
+
+.sucess a:hover {
+    background-size: 100% 2px;
+}
+
+.main select {
+    border: none;
+    font-size: 1em;
+    margin: 10px 0;
+    padding-left: 0;
+}
+
+.invisible {
+    display: none;
+}
+
+.hint {
+    font-size: 0.8em;
+    font-style: italic;
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    margin-top: 10px;
+}
+
+.hint a {
+    text-decoration: underline;
+    color: black;
+}
+
+.navButton {
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    outline: none;
+    border: 2px solid black;
+    font-size: 1em;
+    background-color: white;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    padding: 0.2em 0.4em;
+    box-shadow: 0 0 7px rgba(82, 82, 82, 1);
+
+}
+
+.navButton a {
+    color: black;
+    text-decoration: none;
+}
+
+.navButton:hover a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.navButton:hover {
+    background-color: black;
+    color: white;
+    box-shadow: none;
+}

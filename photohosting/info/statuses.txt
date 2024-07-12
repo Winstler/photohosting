@@ -1,0 +1,4 @@
+0 - User hasn't confirmed his email. He can't log in, there will be an error, so he couldn't make any posts or anything. Also, he can't be seen, although record in DB is created.
+1 - User has confirmed his email and he can use site with all functions.
+2 - Admin. Can delete any posts and block users.
+3 - Freezed account, because somebody has entered lots of time wrong password. This user can't log in, he needs to wait some time, but his posts and account can be seen.
